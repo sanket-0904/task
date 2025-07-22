@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 50px;
+  width: 90%;
+  padding: 12px 20px;
+  top: 20px; /* ya jo distance chahiye */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo img {
+  width: 100px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn button {
+  font-size: 17px;
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-right: 60px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  background-color: #ba0f30;
+}
+
+.btn i {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #ba0f30;
+  padding: 10px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-left: -40px;
+}
