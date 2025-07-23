@@ -4,3 +4,13 @@
   box-sizing: border-box;
   font-family: poppins, sans-serif;
 }
+
+.btns {
+  font-size: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  background-color: #ba0f30;
+  cursor: pointer;
+}
