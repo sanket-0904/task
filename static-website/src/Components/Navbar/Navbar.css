@@ -49,3 +49,15 @@
   border: 4px solid white;
   margin-left: -40px;
 }
+
+@media (max-width: 320px) {
+  .navbar {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar img {
+    width: 40%;
+  }
+}

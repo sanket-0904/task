@@ -139,6 +139,16 @@
   max-width: 300px;
 }
 
+@media (max-width: 1072px) {
+  .about {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 50px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media (max-width: 1024px) {
   .about {
     flex-direction: column;
@@ -175,12 +185,20 @@
     font-size: 40px;
   }
 
+  .cutomer {
+    flex-direction: column;
+    margin: 0;
+    padding: 0px 10px;
+  }
+
   .list {
     text-align: center;
   }
 
   .star {
+    flex-direction: column;
     border: none;
+    padding: 0px 10px;
   }
   .master {
     flex-direction: column;
