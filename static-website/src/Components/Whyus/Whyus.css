@@ -81,6 +81,10 @@
 }
 
 .number div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   z-index: 1;
   font-size: 18px;
 }
@@ -112,6 +116,10 @@
     margin-top: 70px;
   }
 
+  .demo h1 {
+    font-size: 3.1rem;
+  }
+
   .points {
     gap: 80px;
     width: 100%;
@@ -137,13 +145,19 @@
   }
 
   .number div {
+    gap: 10px;
     font-size: 16px;
   }
 }
 
 @media (max-width: 600px) {
   .points {
-    gap: 60px;
+    max-width: 200px;
+    gap: 40px;
+  }
+
+  .number {
+    gap: 20px;
   }
 
   .number span {
