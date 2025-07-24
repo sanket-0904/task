@@ -7,7 +7,7 @@ const Demo = () => {
     <>
       <div className="main">
         <div className="demo">
-          <h1>get a demo</h1>
+          <h1 id="demo">get a demo</h1>
           <img src={bg} alt="" />
         </div>
         <div className="box">

@@ -15,6 +15,7 @@
   top: 20px; /* ya jo distance chahiye */
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 }
 
 .logo img {
@@ -37,6 +38,11 @@
   border-radius: 25px;
   color: white;
   background-color: #ba0f30;
+  transition: 0.3s ease;
+}
+.btn button:hover {
+  background-color: #d61a3f;
+  cursor: pointer;
 }
 
 .btn i {
@@ -48,16 +54,25 @@
   border-radius: 50%;
   border: 4px solid white;
   margin-left: -40px;
+  transition: 0.3s ease;
+}
+
+.btn i:hover {
+  background-color: #d61a3f;
+  transform: scale(1.2) rotate(10deg);
+  cursor: pointer;
 }
 
 @media (max-width: 320px) {
   .navbar {
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .navbar img {
-    width: 40%;
+    width: 100px;
+  }
+  .navbar button {
+    display: none;
   }
 }

@@ -17,7 +17,7 @@ const Content = () => {
             and distribution.
           </p>
           <div className="enroll">
-            <button>Enroll Now</button>
+            <button className="btns">Enroll Now</button>
           </div>
         </div>
       </div>

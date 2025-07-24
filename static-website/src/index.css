@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: poppins, sans-serif;
+  font-family: "Fredoka", sans-serif;
 }
 
 .btns {
@@ -12,5 +13,12 @@
   border-radius: 25px;
   color: white;
   background-color: #ba0f30;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-family: poppins, sans-serif;
+}
+
+.btns:hover {
+  background-color: #d61a3f;
   cursor: pointer;
 }

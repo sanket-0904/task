@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.Whyus {
+  min-height: 100vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  padding: 40px 20px;
+  overflow: hidden;
+}
+
+.demo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 500px;
+  color: white;
+  text-align: center;
+}
+
+.demo h1 {
+  font-size: 70px;
+  font-weight: 600;
+  margin-top: -70px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.demo img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.points {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  width: 500px;
+}
+
+.number {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 250px;
+  gap: 20px;
+  color: white;
+}
+
+.number span {
+  position: absolute;
+  top: -70px;
+  left: -10px;
+  font-size: 50px;
+  font-weight: bold;
+  z-index: 0;
+  color: gray;
+}
+
+.number span h1 {
+  font-weight: 100;
+}
+
+.number.two {
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.number div {
+  z-index: 1;
+  font-size: 18px;
+}
+
+.cirule {
+  position: absolute;
+  height: 50vh;
+  width: 50vh;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  right: -137%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background-color: aliceblue;
+  top: 10%;
+  display: flex;
+  filter: brightness(17%);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .Whyus {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .demo {
+    margin-top: 70px;
+  }
+
+  .points {
+    gap: 80px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .number,
+  .number.two {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .number span {
+    position: static;
+    font-size: 36px;
+    color: gray;
+    margin-bottom: 10px;
+  }
+
+  .number div {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .points {
+    gap: 60px;
+  }
+
+  .number span {
+    font-size: 28px;
+  }
+
+  .number div {
+    font-size: 14px;
+  }
+  .cirule {
+    display: none;
+  }
+}
