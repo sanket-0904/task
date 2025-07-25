@@ -72,7 +72,7 @@
   .btn i {
     font-size: 16px;
     padding: 8px;
-    margin-left: -30px;
+    margin-left: -25px;
     border-width: 3px;
   }
 
@@ -84,13 +84,13 @@
 @media (max-width: 480px) {
   .btn button {
     font-size: 12px;
-    padding: 7px 20px 7px 18px;
+    padding: 7px 32px 7px 18px;
   }
 
   .btn i {
     font-size: 14px;
     padding: 6px;
-    margin-left: -20px;
+    margin-left: -22px;
     border-width: 2px;
   }
 

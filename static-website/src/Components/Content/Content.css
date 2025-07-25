@@ -36,7 +36,8 @@
 }
 
 .contents h1 {
-  font-size: 48px;
+  font-family: "Fredoka", sans-serif;
+  font-size: 3rem;
   font-weight: 600;
   line-height: 1.2;
 }

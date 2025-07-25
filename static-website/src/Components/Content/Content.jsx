@@ -1,27 +1,26 @@
-import React from "react";
 import "./Content.css";
-import bg from "./../../assets/bg.jpg";
+import bg from "../../assets/bg.jpg";
 import Navbar from "../Navbar/Navbar";
 
 const Content = () => {
   return (
-    <>
+    <div className="content-wrapper">
       <Navbar />
       <div className="content">
-        <img id="bg" src={bg} alt="" />
+        <img id="bg" src={bg} alt="Digital Marketing Background" />
         <div className="contents">
-          <h1>UNLOCK DIGITAL MARKETING MASTERY WITH BEETLE DIGITAL!</h1>
+          <h1>Unlock Digital Marketing Mastery with Beetle Digital!</h1>
           <p>
-            Learn how to harness Al and automation tools to improve content
-            creation, deepen customer insights, boost social media production
-            and distribution.
+            Learn how to harness AI and automation tools to improve content
+            creation, deepen customer insights, and boost social media
+            production and distribution.
           </p>
           <div className="enroll">
-            <button className="btns">Enroll Now</button>
+            <button className="btn-enroll">Enroll Now</button>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
