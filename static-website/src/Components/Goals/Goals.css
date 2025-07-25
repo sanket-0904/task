@@ -36,9 +36,17 @@
   color: #333;
 }
 
-.heading span {
+.heading .goals-span {
+  max-width: 550px;
   position: relative;
-  display: inline-block;
+}
+
+.goals-span img {
+  position: absolute;
+  width: 170px;
+  height: auto;
+  left: 0px;
+  top: 70px;
 }
 
 .heading h1 {
@@ -48,13 +56,6 @@
   position: relative;
   color: black;
   font-family: "Fredoka", sans-serif;
-}
-
-.heading span img {
-  position: absolute;
-  width: 100%;
-  bottom: -15px;
-  left: 0;
 }
 
 /* Goals points */
@@ -122,6 +123,13 @@
   .tools {
     flex-direction: column;
   }
+
+  .heading span img {
+    width: 80%;
+    bottom: -10px;
+    left: 10px; /* Tablet par left se 10px */
+    transform: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -130,9 +138,11 @@
     flex-wrap: wrap;
     max-width: 400px;
   }
+
   .tools {
     flex-direction: column;
   }
+
   .heading {
     flex-direction: column;
     text-align: center;
@@ -148,6 +158,13 @@
     font-size: 1.5rem;
   }
 
+  .heading span img {
+    width: 60%;
+    bottom: -8px;
+    left: 10px; /* Mobile par left se 10px */
+    transform: none;
+  }
+
   .goals-points {
     gap: 15px;
     padding: 0 10px;
@@ -156,5 +173,8 @@
   .check-point p {
     font-size: 1rem;
     line-height: 1.4rem;
+  }
+  .goals-span img {
+    top: 40px;
   }
 }

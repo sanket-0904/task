@@ -40,7 +40,7 @@ const Modules = () => {
           </div>
         </div>
         <div className="module-img">
-          <span>
+          <span className="module-underline">
             <h1>MODULES</h1>
             <img src={line} alt="" />
           </span>

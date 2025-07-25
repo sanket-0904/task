@@ -1,0 +1,157 @@
+.swiper-container {
+  padding: 40px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.swiper-title {
+  margin-right: 70px;
+  text-align: right;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  font-family: "Fredoka", sans-serif;
+}
+
+span {
+  position: relative;
+}
+
+span img {
+  position: absolute;
+  height: auto;
+  width: 100px;
+  top: 20px;
+  left: 150px;
+}
+
+.card {
+  background: #fff;
+  color: #000;
+  border-radius: 15px;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: start;
+  min-height: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #e11d48;
+}
+
+.swiper-pagination-bullet {
+  background: #fff;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background: #e11d48;
+  opacity: 1;
+}
+
+.custom-nav {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.custom-prev,
+.custom-next {
+  background-color: #e11d48;
+  color: white;
+  border: none;
+  font-size: 18px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.custom-next:hover {
+  background-color: white;
+  color: #e11d48;
+}
+
+.custom-prev:hover {
+  background-color: white;
+  color: #e11d48;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .swiper-title {
+    font-size: 3rem;
+    margin-right: 40px;
+  }
+
+  span img {
+    width: 80px;
+    left: 100px;
+    top: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-container {
+    padding: 20px;
+  }
+
+  .swiper-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  span img {
+    width: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+  }
+
+  .card {
+    padding: 15px;
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper-title {
+    font-size: 2rem;
+  }
+
+  span img {
+    width: 50px;
+    top: 5px;
+  }
+
+  .custom-nav {
+    gap: 10px;
+  }
+
+  .custom-prev,
+  .custom-next {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+}

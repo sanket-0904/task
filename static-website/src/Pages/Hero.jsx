@@ -7,6 +7,7 @@ import Demo from "../Components/Demo/Demo";
 import Whyus from "../Components/Whyus/Whyus";
 import Modules from "../Components/Modules/Modules";
 import Goals from "../Components/Goals/Goals";
+import Slider from "../Components/Slider/Silder";
 
 const Hero = () => {
   return (
@@ -17,6 +18,7 @@ const Hero = () => {
       <Whyus />
       <Modules />
       <Goals />
+      <Slider />
     </>
   );
 };

@@ -47,7 +47,6 @@ const Whyus = () => {
               </p>
             </div>
           </div>
-          <div className="cirule"></div>
         </div>
       </div>
     </>

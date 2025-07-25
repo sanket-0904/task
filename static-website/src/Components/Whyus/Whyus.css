@@ -89,23 +89,11 @@
   font-size: 18px;
 }
 
-.cirule {
-  position: absolute;
-  height: 50vh;
-  width: 50vh;
-  border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  right: -137%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-  background-color: aliceblue;
-  top: 10%;
-  display: flex;
-  filter: brightness(17%);
-}
-
 /* Responsive */
 @media (max-width: 1024px) {
+  .number div {
+    align-items: center;
+  }
   .Whyus {
     flex-direction: column;
     text-align: center;
@@ -151,6 +139,9 @@
 }
 
 @media (max-width: 600px) {
+  .cirule {
+    display: none;
+  }
   .points {
     max-width: 200px;
     gap: 40px;
@@ -165,6 +156,7 @@
   }
 
   .number div {
+    text-align: center;
     font-size: 14px;
   }
   .cirule {

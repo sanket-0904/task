@@ -14,7 +14,7 @@ const Goals = () => {
     <div className="goals">
       <div className="heading">
         <h2>It will help you to:</h2>
-        <span>
+        <span className="goals-span">
           <h1>GOALS</h1>
           <img src={line} alt="underline" />
         </span>
