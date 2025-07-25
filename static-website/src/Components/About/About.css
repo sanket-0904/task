@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   font-family: "Fredoka", poppins, sans-serif;
 }
 
@@ -8,9 +9,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: calc(100vh - 200px);
+  min-height: calc(100vh - 200px);
   width: 100%;
-  padding: 0px 100px;
+  padding: 0 100px;
+  gap: 40px;
 }
 
 .about-content {
@@ -21,7 +23,7 @@
 }
 
 .about-content .heading {
-  padding: 20px 0px;
+  padding: 20px 0;
   position: relative;
 }
 
@@ -33,15 +35,14 @@
 }
 
 .about-content .heading h1 {
-  font-family: "Fredoka", sans-serif;
   font-weight: 600;
   font-size: 70px;
   color: black;
 }
 
 .about-content p {
-  font-family: poppins;
   color: rgb(81, 81, 81);
+  line-height: 1.6;
 }
 
 .about-content button {
@@ -49,32 +50,29 @@
 }
 
 .list {
-  font-family: Arial, Helvetica, sans-serif;
   max-width: 600px;
   text-align: start;
 }
 
 .list h1 {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   margin-bottom: 10px;
 }
 
 .list ul {
-  font-family: sans-serif;
   margin-left: 27px;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 .rating {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 200px;
-  width: 100%;
   background-color: black;
   gap: 70px;
-  font-family: Arial, Helvetica, sans-serif;
+  flex-wrap: wrap;
+  padding: 40px;
+  text-align: center;
 }
 
 .cutomer {
@@ -83,7 +81,7 @@
   justify-content: center;
   color: white;
   gap: 40px;
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 50px;
 }
 
 .cutomer .img {
@@ -104,8 +102,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 70px;
+  gap: 40px;
   color: white;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  padding: 0 30px;
 }
 
 .star i {
@@ -116,118 +117,121 @@
 .master {
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-
-.master p {
-  color: white;
-  max-width: 400px;
-}
-
-.cutomer {
-  height: 70%;
-  padding: 0px 50px;
-}
-
-.star {
-  height: 70%;
-  border-left: 2px solid white;
-  border-right: 2px solid white;
-  padding: 0px 50px;
-}
-
-.master {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
-  height: 70%;
-  padding: 0px 40px;
+  color: white;
+  padding: 0 30px;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .master-content {
   max-width: 300px;
 }
 
-@media (max-width: 1072px) {
-  .about {
-    flex-direction: column;
-    height: auto;
-    padding: 40px 50px;
-    justify-content: center;
-    align-items: center;
-  }
+.master p {
+  max-width: 400px;
+  color: white;
+  line-height: 1.4;
 }
 
+/* Tablet */
 @media (max-width: 1024px) {
   .about {
     flex-direction: column;
-    padding: 0 50px;
-    justify-content: center;
-    align-items: center;
+    padding: 40px 50px;
+    text-align: center;
+    gap: 30px;
+    min-height: auto;
   }
+
+  .about-content {
+    padding: 20px;
+    max-width: 90%;
+  }
+
   .about-content .heading h1 {
     font-size: 50px;
   }
-  .rating {
-    flex-wrap: wrap;
-    height: auto;
-    padding: 40px;
+
+  .about-content .heading img {
+    width: 150px;
+    right: 10px;
   }
+
+  .rating {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
   .star {
     border: none;
+    padding: 0;
   }
 }
 
+/* Mobile */
 @media (max-width: 768px) {
   .about {
-    flex-direction: column;
-    height: auto;
-    text-align: center;
-    padding: 40px 20px;
+    padding: 30px 20px;
+    gap: 25px;
   }
 
   .about-content {
     text-align: center;
+    padding: 10px;
   }
 
   .about-content .heading h1 {
     font-size: 40px;
   }
 
-  .cutomer {
-    flex-direction: column;
-    margin: 0;
-    padding: 0px 10px;
-  }
-
   .list {
     text-align: center;
   }
 
+  .cutomer {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
   .star {
     flex-direction: column;
+    gap: 20px;
     border: none;
-    padding: 0px 10px;
+    padding: 0 10px;
   }
+
   .master {
     flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
   }
 }
 
+/* Small Mobile */
 @media (max-width: 480px) {
   .about-content .heading h1 {
     font-size: 32px;
   }
 
+  .about-content .heading img {
+    width: 120px;
+    right: 5px;
+    bottom: -5px;
+  }
+
   .list h1 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .star i {
-    font-size: 30px;
+    font-size: 28px;
   }
-  .master {
-    padding: aut;
+
+  .rating {
+    padding: 20px 10px;
+    gap: 20px;
   }
 }

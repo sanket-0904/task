@@ -64,7 +64,7 @@ details[open] summary::after {
   transform: rotate(90deg);
 }
 
-p {
+summary p {
   margin-top: 8px;
   color: #555;
 }
