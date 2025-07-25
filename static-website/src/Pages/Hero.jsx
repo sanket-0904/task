@@ -6,6 +6,7 @@ import About from "../Components/About/About";
 import Demo from "../Components/Demo/Demo";
 import Whyus from "../Components/Whyus/Whyus";
 import Modules from "../Components/Modules/Modules";
+import Goals from "../Components/Goals/Goals";
 
 const Hero = () => {
   return (
@@ -15,6 +16,7 @@ const Hero = () => {
       <Demo />
       <Whyus />
       <Modules />
+      <Goals />
     </>
   );
 };

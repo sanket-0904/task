@@ -1,0 +1,160 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Main container */
+.goals {
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: white;
+}
+
+/* Heading section */
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 50px;
+  padding: 0 40px;
+  flex-wrap: wrap;
+}
+
+.heading h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.heading span {
+  position: relative;
+  display: inline-block;
+}
+
+.heading h1 {
+  font-size: 4.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+  color: black;
+  font-family: "Fredoka", sans-serif;
+}
+
+.heading span img {
+  position: absolute;
+  width: 100%;
+  bottom: -15px;
+  left: 0;
+}
+
+/* Goals points */
+.goals-points {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  max-width: 80%;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.check-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.check-point i {
+  color: brown;
+  font-size: 1.5rem;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
+.check-point p {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  color: #555;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 70px;
+}
+
+.tools-img {
+  width: 270px;
+}
+
+.tools-img img {
+  width: 100%;
+}
+
+.gray-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.gray {
+  height: 50px;
+  width: 100px;
+  background-color: gray;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .tools {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .gray-img {
+    gap: 10px;
+    flex-wrap: wrap;
+    max-width: 400px;
+  }
+  .tools {
+    flex-direction: column;
+  }
+  .heading {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .heading h1 {
+    font-size: 2.5rem;
+  }
+
+  .heading h2 {
+    font-size: 1.5rem;
+  }
+
+  .goals-points {
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .check-point p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+}
