@@ -9,6 +9,7 @@ import Modules from "../Components/Modules/Modules";
 import Goals from "../Components/Goals/Goals";
 import Slider from "../Components/Slider/Silder";
 import Faq from "../Components/Faq/Faq";
+import Footer from "../Components/Footer/Footer";
 
 const Hero = () => {
   return (
@@ -21,6 +22,7 @@ const Hero = () => {
       <Goals />
       <Slider />
       <Faq />
+      <Footer />
     </>
   );
 };
