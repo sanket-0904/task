@@ -5,6 +5,7 @@ import Content from "../Components/Content/Content";
 import About from "../Components/About/About";
 import Demo from "../Components/Demo/Demo";
 import Whyus from "../Components/Whyus/Whyus";
+import Modules from "../Components/Modules/Modules";
 
 const Hero = () => {
   return (
@@ -13,6 +14,7 @@ const Hero = () => {
       <About />
       <Demo />
       <Whyus />
+      <Modules />
     </>
   );
 };
