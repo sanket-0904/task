@@ -8,6 +8,7 @@ import Whyus from "../Components/Whyus/Whyus";
 import Modules from "../Components/Modules/Modules";
 import Goals from "../Components/Goals/Goals";
 import Slider from "../Components/Slider/Silder";
+import Faq from "../Components/Faq/Faq";
 
 const Hero = () => {
   return (
@@ -19,6 +20,7 @@ const Hero = () => {
       <Modules />
       <Goals />
       <Slider />
+      <Faq />
     </>
   );
 };

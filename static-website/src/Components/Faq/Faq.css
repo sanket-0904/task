@@ -1,0 +1,219 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.faq {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  gap: 70px;
+}
+
+.faq-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.faq-heading {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 70%;
+  max-width: 70%;
+  margin-top: 70px;
+}
+
+.faq-heading h1 {
+  font-family: "Fredoka", sans-serif;
+  font-size: 4rem;
+  color: black;
+}
+
+details {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  font-family: Arial, sans-serif;
+  width: 80%;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  list-style: none;
+  position: relative;
+  padding-right: 25px;
+}
+
+summary::after {
+  content: "▶"; /* arrow icon */
+  position: absolute;
+  right: 0;
+  transition: 0.2s ease;
+  color: brown;
+}
+
+details[open] summary::after {
+  transform: rotate(90deg);
+}
+
+p {
+  margin-top: 8px;
+  color: #555;
+}
+
+.join-section {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+.join-text h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.join-text p {
+  font-size: 18px;
+  color: #ccc;
+  margin: 0;
+}
+
+.join-cta {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.join-cta i {
+  font-size: 40px;
+  color: #e11d48;
+}
+
+.join-btn {
+  background-color: #e11d48;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 999px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.join-btn:hover {
+  background-color: #be123c;
+}
+
+@media (max-width: 1024px) {
+  .faq-heading {
+    width: 85%;
+    max-width: 85%;
+  }
+
+  .faq-heading h1 {
+    font-size: 3rem;
+  }
+
+  details {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq {
+    gap: 40px;
+    height: auto;
+  }
+
+  .faq-heading {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 40px;
+    justify-content: center;
+    text-align: center;
+  }
+  .faq-div {
+    padding: 20px;
+  }
+
+  .faq-heading h1 {
+    font-size: 2.5rem;
+  }
+
+  details {
+    width: 95%;
+    font-size: 0.95rem;
+  }
+
+  .join-section {
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .join-text h2 {
+    font-size: 24px;
+  }
+
+  .join-text p {
+    font-size: 16px;
+  }
+
+  .join-cta {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .join-cta i {
+    font-size: 36px;
+  }
+
+  .join-btn {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-heading h1 {
+    font-size: 2rem;
+  }
+
+  details {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .join-text h2 {
+    font-size: 20px;
+  }
+
+  .join-text p {
+    font-size: 14px;
+  }
+
+  .join-cta i {
+    font-size: 30px;
+  }
+
+  .join-btn {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+}
